@@ -1,0 +1,18 @@
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 50px;
+    height: 80vh; /* Hardcoding container height */
+    width: 85vw;
+    background-color: transparent;
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 2px;
+}
