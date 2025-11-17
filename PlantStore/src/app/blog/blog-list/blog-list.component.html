@@ -12,11 +12,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Title</td>
-                <td>Date</td>
+            <tr *ngFor="let post of blogPosts">
+                <td>{{ post.title }}</td>
+                <td>{{ post.date }}</td>
                 <td>
-                    <a>Read More</a>
+                    <a [routerLink]="['/blog', post.id]">Read More</a>
                 </td>
             </tr>
         </tbody>
